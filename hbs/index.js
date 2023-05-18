@@ -5,7 +5,7 @@ const hbs = require('hbs')
 
 const port = 8085
 
-app.use(express.static('public'))
+app.use(express.static(__dirname+'/public'))
 
 app.set('views', path.join(__dirname + '/public/views'))
 app.set('view engine', 'hbs')
