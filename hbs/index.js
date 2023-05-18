@@ -12,13 +12,13 @@ app.set('view engine', 'hbs')
 
 hbs.registerPartials(__dirname + '/public/views/partials');
 
-app.get('/', (req, res) =>{
-    res.render('disponibilidad',{
-        titulo:'Disponibilidad',
-        nombre:''
+app.get('/', (req, res) => {
+    res.render('disponibilidad', {
+        titulo: 'Disponibilidad',
+        nombre: ''
     })
 })
 
-app.listen(port, ()=>{
+app.listen(port, () => {
     console.log(`Escuchando por el puerto ${port}`)
 })
